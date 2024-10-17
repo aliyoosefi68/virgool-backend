@@ -8,6 +8,8 @@ export class OtpEntity extends BaseEntity {
   @Column({ nullable: true })
   code: string;
   @Column({ nullable: true })
+  method: string;
+  @Column({ nullable: true })
   expiresIn: Date;
   @Column()
   userId: number;
